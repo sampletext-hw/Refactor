@@ -15,28 +15,10 @@ namespace P03.DetailPrinter
 
         public void PrintDetails()
         {
-            foreach (Employee employee in this.employees)
+            foreach (var employee in this.employees)
             {
-                if (employee is Manager)
-                {
-                    this.PrintManager((Manager)employee);
-                }
-                else
-                {
-                    this.PrintEmployee(employee);
-                }
+                employee.PrintInfo();
             }
-        }
-
-        private void PrintEmployee(Employee employee)
-        {
-            Console.WriteLine(employee.Name);
-        }
-
-        private void PrintManager(Manager manager)
-        {
-            Console.WriteLine(manager.Name);
-            Console.WriteLine(string.Join(Environment.NewLine, manager.Documents));
         }
     }
 }
