@@ -6,6 +6,9 @@ namespace P02.Graphic_Editor
 {
     public class Rectangle : IShape
     {
-
+        public void Draw(GraphicEditor editor)
+        {
+            Console.WriteLine("I am Rectangle");
+        }
     }
 }
