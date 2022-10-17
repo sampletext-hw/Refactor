@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace P02.Graphic_Editor
+﻿namespace P02.Graphic_Editor
 {
     public class Square : IShape
     {
-        public void Draw(GraphicEditor editor)
+        public void Draw(DrawContext context)
         {
-            Console.WriteLine("I am Square");
+            context.DrawSquare();
         }
     }
 }

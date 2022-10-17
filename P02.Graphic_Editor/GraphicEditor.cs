@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace P02.Graphic_Editor
+﻿namespace P02.Graphic_Editor
 {
     public class GraphicEditor
     {
         public void DrawShape(IShape shape)
         {
-            shape.Draw(this);
+            var drawContext = new DrawContext();
+            shape.Draw(drawContext);
         }
     }
 }

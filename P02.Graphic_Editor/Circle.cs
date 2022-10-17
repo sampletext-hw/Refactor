@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace P02.Graphic_Editor
+﻿namespace P02.Graphic_Editor
 {
     public class Circle : IShape
     {
-        public void Draw(GraphicEditor editor)
+        public void Draw(DrawContext editor)
         {
-            Console.WriteLine("I am Circle");
+            editor.DrawCircle();
         }
     }
 }

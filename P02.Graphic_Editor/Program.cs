@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace P02.Graphic_Editor
+﻿namespace P02.Graphic_Editor
 {
     class Program
     {
